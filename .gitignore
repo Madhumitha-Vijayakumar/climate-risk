@@ -6,8 +6,7 @@ env/
 __pycache__/
 *.pyc
 
-# ML model files
-*.pkl
+
 
 # OS files
 .DS_Store
