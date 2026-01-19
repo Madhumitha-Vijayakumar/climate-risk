@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Climate Risk Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌍 Climate Risk Classification</h1>
+
+    <form method="POST">
+        <input type="number" name="temperature" placeholder="Temperature (°C)" required>
+        <input type="number" name="rainfall" placeholder="Rainfall (mm)" required>
+        <input type="number" name="humidity" placeholder="Humidity (%)" required>
+        <input type="number" name="air_quality" placeholder="Air Quality Index" required>
+        <button type="submit">Classify Risk</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Result: {{ prediction }}</h2>
+    {% endif %}
+</div>
+
+</body>
+</html>
